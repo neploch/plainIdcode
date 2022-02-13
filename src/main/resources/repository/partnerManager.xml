@@ -12,9 +12,7 @@
     <partnerWsIdUrl>https://api.%s/env-mgmt/environment/%s/partners-ws</partnerWsIdUrl>
     <schemaOwnerUrl>https://api.%s/org-mgmt/schema/owner/%s</schemaOwnerUrl>
 
-<!--     <OktaIDPApiKey>__00Vw__7S81HJlC73Hyll5b47tbogPPBqnSpphwqROF6E</OktaIDPApiKey> -->
     <OktaIDPClientId>0oa2si3m8npp7vv7p5d7</OktaIDPClientId>
-<!--     <OktaIDPClientSecret>__vVT8db__9K6z6jUokRl0BU4l6I53YAKGhkGY-n0sqH</OktaIDPClientSecret> -->
     <OktaIDPIssuer>https://dev-74493273.okta.com/oauth2/aus2si53m3LcTMxbg5d7</OktaIDPIssuer>!
     <OktaIDPAuthorizationUrl>https://dev-74493273.okta.com/oauth2/aus2si53m3LcTMxbg5d7/v1/authorize</OktaIDPAuthorizationUrl>
     <OktaIDPGroupId>00g2si1mpnyPaAj8C5d7</OktaIDPGroupId>
@@ -29,9 +27,6 @@
 
     <daDirectLoginUrl>https://%s.%s/delegated-admin?workspaceId=%s</daDirectLoginUrl>
 
-    <auth0DomainName>https://dev-wh19qlah.us.auth0.com</auth0DomainName>
-    <auth0ClientId>urxmzISqapMZD50XOIsCwofXA2r9fjSI</auth0ClientId>
-<!--     <auth0ClittScet>rrib7hsKlrHRTbP0F-rbJB35rL5AvEsNe5KKmgJnMPwN3wBsz3wfiwoZPs5CZAKX</auth0ClittSet> -->
     <auth0MetaDataUrl>https://dev-wh19qlah.us.auth0.com/.well-known/openid-configuration</auth0MetaDataUrl>
     <auth0Audience>https://dev-wh19qlah.us.auth0.com/api/v2/</auth0Audience>
     <OAuthAuthorizationUrl>https://dev-wh19qlah.us.auth0.com/authorize</OAuthAuthorizationUrl>
