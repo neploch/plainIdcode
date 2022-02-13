@@ -1,0 +1,191 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: automation-reports
+  labels:
+    app: automation-reports
+type: Opaque
+data:
+  AWS_ACCESS_KEY_ID: ZHVtbXkK
+  AWS_SECRET_ACCESS_KEY: ZHVtbXkK
+  AWS_DEFAULT_REGION: ZHVtbXkK
+---
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: automation-reports
+spec:
+  schedule: "00 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: Never
+          containers:
+          - name: maven
+            image: 603927123425.dkr.ecr.us-east-2.amazonaws.com/automation:24ad2aef91cb6be3681bfe277aa855ef7b733619
+            envFrom:
+              - secretRef:
+                  name: automation-reports
+            env:
+              - name: TEST_SUITE
+                value: chromeSanity,chromeRegression
+              - name: DUMP_TO_NGINX
+                value: "true"
+              - name: DUMP_TO_S3
+                value: "true"
+              - name: S3_BUCKET
+                value: plainid-automation-reports-test
+              - name: LOOP_INFINITELY
+                value: "false"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: automation-reports
+  labels:
+    app: automation-reports
+spec:
+  selector:
+    matchLabels:
+      app: automation-reports
+  replicas: 0  # Notice the replicas number.
+  template:
+    metadata:
+      labels:
+        app: automation-reports
+    spec:
+      containers:
+        - name: maven
+          image: 603927123425.dkr.ecr.us-east-2.amazonaws.com/automation:24ad2aef91cb6be3681bfe277aa855ef7b733619
+          envFrom:
+            - secretRef:
+                name: automation-reports
+          env:
+            - name: TEST_SUITE
+              value: chromeSanity
+            - name: DUMP_TO_NGINX
+              value: "true"
+            - name: DUMP_TO_S3
+              value: "false"
+            - name: S3_BUCKET
+              value: dummy
+            - name: LOOP_INFINITELY
+              value: "true"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: reports-nginx
+spec:
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  - name: ssh
+    port: 22
+    protocol: TCP
+    targetPort: 22
+  selector:
+    app: reports-nginx
+  type: ClusterIP
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: reports-nginx-lb
+spec:
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: reports-nginx
+  type: LoadBalancer
+  loadBalancerSourceRanges:
+    - 5.102.205.88/32
+    - 5.102.205.25/32
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: reports-nginx
+data:
+  authorized_keys: |
+    ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyb71tjbAyCliiJZVvhIEr7sspIQVFHgkbbtYOy+ur5lD28TQPYaHCZbjDi+BSJQCq3QwjoGlaa/4I1fsydF/SrIQjB5y4gjVFrJLSik6YCcw+UVRNuBz4ghsDKQzV311FPKFNV5s86TTWnkJjd/f73p2HDS+0UChIbMLOF+JZpZq/iBffXzjTZQH5kuZSYG+9hBDvBNslbS1L7jFPjaESE2vFkJsC8co92CNxKel9rB+LezLTJfaukpwnGX6C+9t80KDOAqrCVXiF4FU9jV22o2V9/bgIevoaXxOSlFMtRbx9bJSwLIs+fwFqE8DJqr1H7a1pM1Z/Vqp9O1gCMv5l
+  default.conf: |
+    server {
+        listen       80;
+        server_name  localhost;
+
+        location / {
+            autoindex on;
+            root   /usr/share/nginx/html;
+            index  index.html index.htm;
+        }
+
+        error_page   500 502 503 504  /50x.html;
+        location = /50x.html {
+            root   /usr/share/nginx/html;
+        }
+    }
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  annotations:
+    volume.beta.kubernetes.io/storage-provisioner: kubernetes.io/aws-ebs
+  name: reports-nginx
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+  storageClassName: gp2
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: reports-nginx
+  labels:
+    app: reports-nginx
+spec:
+  selector:
+    matchLabels:
+      app: reports-nginx
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: reports-nginx
+    spec:
+      containers:
+        - name: nginx
+          command:
+            - bash
+            - '-c'
+            - |
+              apt update && apt install openssh-server -y
+              service ssh start
+              /docker-entrypoint.sh
+              nginx -g "daemon off;"
+          image: nginx:1.19.10
+          volumeMounts:
+          - mountPath: /etc/nginx/conf.d/default.conf
+            name: nginx-conf
+            subPath: default.conf
+          - mountPath: /root/.ssh/authorized_keys
+            name: nginx-conf
+            subPath: authorized_keys
+          - mountPath: /usr/share/nginx/html/reports
+            name: storage
+      volumes:
+      - configMap:
+          name: reports-nginx
+        name: nginx-conf
+      - name: storage
+        persistentVolumeClaim:
+          claimName: reports-nginx

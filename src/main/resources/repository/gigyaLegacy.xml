@@ -1,0 +1,18 @@
+<general>
+    <environment>Production</environment>
+    <loginUrlStaging>https://console.us1-st1.gigya.com/site/partners/Dashboard.aspx</loginUrlStaging>
+    <loginUrlProd>https://console.gigya.com/site/login.aspx?returnUrl=%2fsite%2fpartners%2fDashboard.aspx</loginUrlProd>
+    <usernameStaging>stav.cohen++selenium@plainid.com</usernameStaging>
+    <passwordStaging>SeleniumStav22</passwordStaging>
+    <usernameProd>stav.cohen++seleniumProd@plainid.com</usernameProd>
+    <passwordProd>SeleniumProd22</passwordProd>
+    <apikeyStaging>3_yv3nUoaipoudXNDTQV-u8A1Xq8vzmxoL-mx7p7Xj4AHw_8goAK_OlG38THibsaNC</apikeyStaging>
+    <apikeyProd>3_NSThuO9zwMOQkHd3sJRrWF8K-ZMuRmSsA_EohaxkRbl0VJvAc3yfMGZLGHjW6FyA</apikeyProd>
+    <loginUrlAWS>https://gigya-login.s3.amazonaws.com/index.html</loginUrlAWS>
+    <siteNameProd>eu_1507</siteNameProd>
+    <dataCenter>eu1</dataCenter>
+    <amazonAWSEmail>11072021test@mailinator.com</amazonAWSEmail>
+    <amazonAWSEmailProd>eliyahu.neploch@mailinator.com</amazonAWSEmailProd>
+    <amazonAWSPassword>123456</amazonAWSPassword>
+
+</general>

@@ -1,0 +1,22 @@
+<general>
+    <tenantName>automation3</tenantName>
+    <userName>automation3@yahoo.com</userName>
+
+
+<!--    <jwtURLTemplate>https://auth.%s/auth/realms/%s/protocol/openid-connect/token</jwtURLTemplate>-->
+
+    <ownerId>85eb896d-f3bc-4974-945e-fe9d7bf5fc39</ownerId>
+    <schemaId>f43cf71e-6805-4b20-9b5e-c6ea7bc2934f</schemaId>
+    <envClientId>PLVHSP2VMLM09ZH4UXU0</envClientId>
+    <secret>Nt7Wb1GPn8dn2W1kCjd6txAyhvER1mF34ioQWTSQ</secret>
+    <workspaceId>85eb896d-f3bc-4974-945e-fe9d7bf5fc39</workspaceId>
+    <partnerId>113a940f-4aed-4e3a-9aa4-19b0809730df</partnerId>
+    <email>momo485@mailinator.com</email>
+    <envDomain>cloud</envDomain>
+    <envDatacenter>dev1</envDatacenter>
+
+    <alternativeWorkspaceIdDev>7cd7845b-5a82-4c85-8f91-1190d6149965</alternativeWorkspaceIdDev>
+    <alternativeEnvClientIdDev>PJ4AUBLSW09RBJHLRHUD</alternativeEnvClientIdDev>
+    <alternativeSecretDev>desm29KdiwOzouv6rYF4ame9T63ocpbw9NXw26UN</alternativeSecretDev>
+
+</general>

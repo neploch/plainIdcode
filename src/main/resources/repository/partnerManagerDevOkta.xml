@@ -1,0 +1,25 @@
+<general>
+    <tenantName>automation2</tenantName>
+    <userName>automation2@yahoo.com</userName>
+
+        <loginPageUrl>https://%s.dev1.plainid.cloud/app/</loginPageUrl>
+
+<!--        <jwtURLTemplate>https://auth.dev1.plainid.cloud/auth/realms/%s/protocol/openid-connect/token</jwtURLTemplate>-->
+<!--        <registrationUrl>https://api.dev1.plainid.cloud/org-mgmt/request</registrationUrl>-->
+
+        <ownerId>09842223-eb84-45e2-8113-ae8066826d19</ownerId>
+        <schemaId>a49a58bc-e171-493d-bd99-8b58d4bee371</schemaId>
+
+        <envClientId>PQJLD0CXQAYNYYBZBX14</envClientId>
+        <secret>3KgP7nkBGTtdZw33mKDFJo64M9Jv6bpM08j57yxj</secret>
+        <workspaceId>90cf7c50-5ce8-47d5-b415-b84019feddda</workspaceId>
+        <partnerId>fa4bd81f-c191-41f2-8c0f-5a0a612a31f9</partnerId>
+        <email>pw3t175oms@mailinator.com</email>
+        <envDomain>cloud</envDomain>
+        <envDatacenter>dev1</envDatacenter>
+
+        <alternativeWorkspaceId>7cd7845b-5a82-4c85-8f91-1190d6149965</alternativeWorkspaceId>
+        <alternativeEnvClientId>PJ4AUBLSW09RBJHLRHUD</alternativeEnvClientId>
+        <alternativeSecret>desm29KdiwOzouv6rYF4ame9T63ocpbw9NXw26UN</alternativeSecret>
+
+</general>

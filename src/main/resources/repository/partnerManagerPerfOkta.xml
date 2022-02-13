@@ -1,0 +1,26 @@
+<general>
+    <tenantName>eliyahu</tenantName>
+    <userName>eliyahu@yahoo.com</userName>
+    <ui>
+        <loginPageUrl>https://%s.perf.plainid.cloud/app/</loginPageUrl>
+    </ui>
+    <api>
+        <jwtURLTemplate>https://auth.perf.plainid.cloud/auth/realms/%s/protocol/openid-connect/token</jwtURLTemplate>
+        <registrationUrl>https://api.dev1.plainid.cloud/org-mgmt/request</registrationUrl>
+
+        <ownerI>2b71cb17-257b-453d-9312-d0ccadf1232a</ownerI>
+        <schemaId>855a4861-f067-4b52-9c84-066dbad874e8</schemaId>
+
+        <envClientId>PBOS6JM1IRQKF285SU8N</envClientId>
+        <secret>riHpzh7B3vyoIW4QcdKRAwUFK99y8CLVi3KlPmBn</secret>
+        <workspaceId>2b71cb17-257b-453d-9312-d0ccadf1232a</workspaceId>
+        <partnerId>70a37cf9-3e17-4989-b0c8-67536f1cb68e</partnerId>
+        <email>masuda12@mailinator.com</email>
+        <envDomain>plainid.cloud</envDomain>
+        <envDatacenter>perf</envDatacenter>
+
+        <alternativeWorkspaceId>f06562da-a4df-418f-ad80-8402f3e1cc4f</alternativeWorkspaceId>
+        <alternativeEnvClientId>PK4IHXYNMX4S1LKHFSNL</alternativeEnvClientId>
+        <alternativeSecret>PfIETjOGLOSRBKjspKsYRdhv2VAG5mDdqCAUYeDj</alternativeSecret>
+    </api>
+</general>

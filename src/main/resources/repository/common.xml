@@ -1,0 +1,9 @@
+<general>
+    <downloadsPath>C:\Users\neploch\Downloads</downloadsPath>
+    <downloadsPathDocker>/Downloads</downloadsPathDocker>
+    <youTubeUrl>https://www.youtube.com/</youTubeUrl>
+    <eBayUrl>https://www.ebay.com/</eBayUrl>
+    <cherryPic>https://proto.gr/sites/www.proto.gr/files/styles/large_retina/public/images/fruits/cherries.jpg</cherryPic>
+    <pineApplePic>https://i.pinimg.com/564x/97/86/3e/97863e0a14b69caeea2c92537a81fb1b.jpg</pineApplePic>
+    <trollPic>https://mallofnorway.com/content/uploads/2020/07/008840118.jpg</trollPic>
+</general>

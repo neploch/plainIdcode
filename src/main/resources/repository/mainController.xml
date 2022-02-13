@@ -1,0 +1,5 @@
+<general>
+    <application>partnerManager</application>
+    <environment>Staging</environment>
+    <IDP>Auth0</IDP>
+</general>

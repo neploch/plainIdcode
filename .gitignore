@@ -1,0 +1,14 @@
+# Default ignored files
+/.idea
+/.idea/workspace.xml
+*.iml
+PlainIdAutomation.iml
+/reports
+/.idea/libraries
+/target
+
+#/shelf/
+#/workspace.xml
+#/reports/
+#.idea
+

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><general>
+    <environment>auth0dev1</environment>
+
+    <tenantNameDev>automation2</tenantNameDev>
+    <tenantName>automation6</tenantName>
+    <tenantNameProd>automation3</tenantNameProd>
+    <tenantNamePerf>eliyahu</tenantNamePerf>
+    <tenantNameAuth0Dev>auth02</tenantNameAuth0Dev>
+
+    <userName>automation6@yahoo.com</userName>
+    <userNameDev>automation2@yahoo.com</userNameDev>
+    <userNameProd>eliyahu.neploch@plainid.com</userNameProd>
+    <userNamePerf>eliyahu@yahoo.com</userNamePerf>
+    <userNameAuth0Dev>auth02@yahoo.com</userNameAuth0Dev>
+
+    <passWord>Mm123456</passWord>
+    <incompleteDetailsNotification>Some of the details are incomplete or invalid</incompleteDetailsNotification>
+    <ui>
+        <multiValueAtt>Gender</multiValueAtt>
+        <incompleteDetailsNotification>Some of the details are incomplete or invalid</incompleteDetailsNotification>
+
+        <loginPageUrlDev>https://%s.dev1.plainid.cloud/app/</loginPageUrlDev>
+        <loginPageUrl>https://%s.staging.plainid.cloud/app/</loginPageUrl>
+        <loginPageUrlProd>https://%s.us1.plainid.io/app/</loginPageUrlProd>
+        <loginPageUrlPerf>https://%s.perf.plainid.cloud/app/</loginPageUrlPerf>
+    </ui>
+    <api>
+        <jwtURLTemplate>https://auth.staging.plainid.cloud/auth/realms/%s/protocol/openid-connect/token</jwtURLTemplate>
+        <jwtURLTemplateProd>https://auth.us1.plainid.io/auth/realms/%s/protocol/openid-connect/token</jwtURLTemplateProd>
+        <jwtURLTemplateDev>https://auth.dev1.plainid.cloud/auth/realms/%s/protocol/openid-connect/token</jwtURLTemplateDev>
+        <jwtURLTemplatePerf>https://auth.perf.plainid.cloud/auth/realms/%s/protocol/openid-connect/token</jwtURLTemplatePerf>
+
+        <registrationUrl>https://api.staging.plainid.cloud/org-mgmt/request</registrationUrl>
+        <registrationUrlProd>https://api.us1.plainid.io/org-mgmt/request</registrationUrlProd>
+        <registrationUrlDev>https://api.dev1.plainid.cloud/org-mgmt/request</registrationUrlDev>
+        <registrationUrlPerf>https://api.dev1.plainid.cloud/org-mgmt/request</registrationUrlPerf>
+
+        <RTUrl>https://api.%s.plainid.cloud/%s/api/runtime/token/v3</RTUrl>
+        <hookUrl>https://%s.%s.%s/hook/%s</hookUrl>
+
+        <ownerId>360c0f44-4aba-426a-84cf-76c4f9b16dd5</ownerId>
+        <schemaId>2471b088-0943-4d8e-b60a-24893a276e97</schemaId>
+
+        <ownerIdProd>5218f707-96de-4d4c-92c6-ebedd9ccbdbf</ownerIdProd>
+        <schemaIdProd>f50f2ac3-8e38-4733-adac-4817e3c58643</schemaIdProd>
+
+        <ownerIdDev>90cf7c50-5ce8-47d5-b415-b84019feddda</ownerIdDev>
+        <schemaIdDev>10ab8670-f87d-40a6-8d7f-28c0c42fa164</schemaIdDev>
+
+        <ownerIdPerf>2b71cb17-257b-453d-9312-d0ccadf1232a</ownerIdPerf>
+        <schemaIdPerf>855a4861-f067-4b52-9c84-066dbad874e8</schemaIdPerf>
+
+        <ownerIdAuth0Dev>85eb896d-f3bc-4974-945e-fe9d7bf5fc39</ownerIdAuth0Dev>
+        <schemaIdAuth0Dev>f43cf71e-6805-4b20-9b5e-c6ea7bc2934f</schemaIdAuth0Dev>
+
+        <OktaIDPApiKey>00W3W5-RRq8gsHrunDMZwqXUaScueK2xDTSX2ZvkaS</OktaIDPApiKey>
+        <OktaIDPClientId>0oaxbec7srCiB5kcr0h7</OktaIDPClientId>
+        <OktaIDPClientSecret>_nBxVxO30T NltRZBXIdkiY5HjHrY3mre9t8yRxee</OktaIDPClientSecret>
+        <OktaIDPIssuer>https://atko-plainid.oktapreview.com/oauth2/ausvfm5zn3SQokzZc0h7</OktaIDPIssuer>
+        <OktaIDPAuthorizationUrl>https://atko-plainid.oktapreview.com/oauth2/ausvfm5zn3SQokzZc0h7/v1/authorize
+        </OktaIDPAuthorizationUrl>
+        <OktaIDPGroupId>00gyw1y7dh4D0nAvl0h7</OktaIDPGroupId>
+        <OktaIDPPartnerClaimName>organization</OktaIDPPartnerClaimName>
+        <OktaIDPTokenUrl>https://atko-plainid.oktapreview.com/oauth2/ausvfm5zn3SQokzZc0h7/v1/token</OktaIDPTokenUrl>
+        <OktaIDPJwksUrl>https://atko-plainid.oktapreview.com/oauth2/ausvfm5zn3SQokzZc0h7/v1/keys</OktaIDPJwksUrl>
+
+        <envClientId>PR44BGYMAGLYMRJJ4FO7</envClientId>
+        <secret>7ScTdGNCw9fTLXkTF5GWAXWESwRgdlPqnon3Zrxn</secret>
+        <workspaceId>360c0f44-4aba-426a-84cf-76c4f9b16dd5</workspaceId>
+        <partnerId>1eec28fe-0ea6-46d5-b848-dc3fd1083fe6</partnerId>
+        <email>hkfhskdhfkds@mailinator.com</email>
+        <envDomain>plainid.cloud</envDomain>
+        <envDatacenter>staging</envDatacenter>
+
+        <envClientIdDev>PQJLD0CXQAYNYYBZBX14</envClientIdDev>
+        <secretDev>10QHvHIK90j93fE48xtzYnle45Kp1gwipdQ5xkQq</secretDev>
+        <workspaceIdDev>90cf7c50-5ce8-47d5-b415-b84019feddda</workspaceIdDev>
+        <partnerIdDev>8a791007-81eb-4ded-b197-90100290fe12</partnerIdDev>
+        <emailDev>momojojo6@mailinator.com</emailDev>
+        <envDomainDev>plainid.cloud</envDomainDev>
+        <envDatacenterDev>dev1</envDatacenterDev>
+
+        <envClientIdProd>PURLVIXZOPJS9T2WGYVT</envClientIdProd>
+        <secretProd>bq5BA2LuzyUM0guXV7OobufoXUMjKM9pzTo1NRDj</secretProd>
+        <workspaceIdProd>5218f707-96de-4d4c-92c6-ebedd9ccbdbf</workspaceIdProd>
+        <partnerIdProd>ddfd528d-dbc9-4ab4-bdd3-bfcf03bb80bd</partnerIdProd>
+        <emailProd>orta58h@mailinator.com</emailProd>
+        <envDomainProd>plainid.io</envDomainProd>
+        <envDatacenterProd>us1</envDatacenterProd>
+
+        <envClientIdPerf>PBOS6JM1IRQKF285SU8N</envClientIdPerf>
+        <secretPerf>riHpzh7B3vyoIW4QcdKRAwUFK99y8CLVi3KlPmBn</secretPerf>
+        <workspaceIdPerf>2b71cb17-257b-453d-9312-d0ccadf1232a</workspaceIdPerf>
+        <partnerIdPerf>70a37cf9-3e17-4989-b0c8-67536f1cb68e</partnerIdPerf>
+        <emailPerf>masuda12@mailinator.com</emailPerf>
+        <envDomainPerf>plainid.cloud</envDomainPerf>
+        <envDatacenterPerf>perf</envDatacenterPerf>
+
+        <envClientIdAuth0Dev>PLVHSP2VMLM09ZH4UXU0</envClientIdAuth0Dev>
+        <secretAuth0Dev>Nt7Wb1GPn8dn2W1kCjd6txAyhvER1mF34ioQWTSQ</secretAuth0Dev>
+        <workspaceIdAuth0Dev>85eb896d-f3bc-4974-945e-fe9d7bf5fc39</workspaceIdAuth0Dev>
+        <partnerIdAuth0Dev>113a940f-4aed-4e3a-9aa4-19b0809730df</partnerIdAuth0Dev>
+        <emailAuth0Dev>momo485@mailinator.com</emailAuth0Dev>
+        <envDomainAuth0Dev>plainid.cloud</envDomainAuth0Dev>
+        <envDatacenterAuth0Dev>dev1</envDatacenterAuth0Dev>
+
+
+        <alternativeWorkspaceId>49931dab-e2c9-42d2-931a-9021b106baea</alternativeWorkspaceId>
+        <alternativeEnvClientId>PJLJ4ZRK4RBNBOBDVMHF</alternativeEnvClientId>
+        <alternativeSecret>xXLujGlzA96pwNpp2gwXYjpSt6RnEU65S8U3EgYw</alternativeSecret>
+
+        <alternativeWorkspaceIdProd>e4fec93f-f987-4116-9ba2-2ce3862944c8</alternativeWorkspaceIdProd>
+        <alternativeEnvClientIdProd>PXYJSZQ2ELCACF5V9UAF</alternativeEnvClientIdProd>
+        <alternativeSecretProd>LPheWvYOtxcY0NxmcC1eRTvwiFVFutA8P9NKvZB2</alternativeSecretProd>
+
+        <alternativeWorkspaceIdDev>7cd7845b-5a82-4c85-8f91-1190d6149965</alternativeWorkspaceIdDev>
+        <alternativeEnvClientIdDev>PJ4AUBLSW09RBJHLRHUD</alternativeEnvClientIdDev>
+        <alternativeSecretDev>desm29KdiwOzouv6rYF4ame9T63ocpbw9NXw26UN</alternativeSecretDev>
+
+        <alternativeWorkspaceIdPerf>f06562da-a4df-418f-ad80-8402f3e1cc4f</alternativeWorkspaceIdPerf>
+        <alternativeEnvClientIdPerf>PK4IHXYNMX4S1LKHFSNL</alternativeEnvClientIdPerf>
+        <alternativeSecretPerf>PfIETjOGLOSRBKjspKsYRdhv2VAG5mDdqCAUYeDj</alternativeSecretPerf>
+
+        <serverDeployDelay>3500</serverDeployDelay>
+    </api>
+</general>

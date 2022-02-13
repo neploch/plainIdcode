@@ -1,0 +1,28 @@
+<general>
+    <tenantName>automation2511</tenantName>
+    <userName>automation2511@yahoo.com</userName>
+
+        <multiValueAtt>Gender</multiValueAtt>
+        <incompleteDetailsNotification>Some of the details are incomplete or invalid</incompleteDetailsNotification>
+
+        <loginPageUrl>https://%s.staging.plainid.cloud/app/</loginPageUrl>
+<!--        <jwtURLTemplate>https://auth.staging.plainid.cloud/auth/realms/%s/protocol/openid-connect/token</jwtURLTemplate>-->
+
+        <registrationUrl>https://api.staging.plainid.cloud/org-mgmt/request</registrationUrl>
+
+        <ownerId>4c287a32-2816-4760-9b7f-9732f4ef56c2</ownerId>
+        <schemaId>1cd7a578-8dfd-44bc-aa7d-d752322fb644</schemaId>
+
+        <envClientId>PJJXPUCODXBSQBK36GHL</envClientId>
+        <secret>TWigfqwae2BoQsIIZugyh9tCTAalDt0mQFROQiWJ</secret>
+        <workspaceId>d98e43ed-4ac0-43a2-b909-429c2e5e5ce3</workspaceId>
+        <partnerId>e588e72c-5697-4078-a2c1-158c29f3854a</partnerId>
+        <email>momok@mailinator.com</email>
+        <envDomain>cloud</envDomain>
+        <envDatacenter>staging</envDatacenter>
+
+        <alternativeWorkspaceId>99ccc1e9-e93d-45b5-a460-5db4b3e5e9cd</alternativeWorkspaceId>
+        <alternativeEnvClientId>PWYPOJHTZJLSBWL17VEI</alternativeEnvClientId>
+        <alternativeSecret>KC1UnDIcvIMvmsPKDVSIvdPLOeemXi3je1ZKUJUb</alternativeSecret>
+
+</general>

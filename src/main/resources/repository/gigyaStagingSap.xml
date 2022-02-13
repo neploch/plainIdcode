@@ -1,0 +1,34 @@
+<general>
+    <tenantName>automation0310</tenantName>
+    <userName>gigyaadmin</userName>
+    <GigyaJwtUsername>gigya@plainid.com</GigyaJwtUsername>
+
+    <multiValueAtt>MultiValue</multiValueAtt>
+
+    <passWord>Mm123456</passWord>
+    <incompleteDetailsNotification>Some of the details are incomplete or invalid</incompleteDetailsNotification>
+    <loginPageUrl>https://%s.%s/app/</loginPageUrl>
+    <jwtURLTemplate>https://auth.%s/auth/realms/%s/protocol/openid-connect/token</jwtURLTemplate>
+    <registrationUrl>https://api.%s/api/gigya/organizations/%s/%s</registrationUrl>
+    <baseUrl>%s.b2b-gigya.%s</baseUrl>
+
+    <RTUrl>https://api.%s/runtime/%s/authorization/token/%s</RTUrl>
+    <GigyaRTjwt>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ5VVlUSExTSHNoZmE3bDdrV3JQOXNQeXJkN216WjVzeCJ9.fvWIUSBxDf39LuVVS6jN0CCFLUGABU5IiiaqAEEL5F0</GigyaRTjwt>
+
+    <ownerId>1973282e-0c9d-442d-8a92-00a98beedf4f</ownerId>
+    <schemaId>0973bab7-a3e2-41c7-848b-4de701c87350</schemaId>
+
+    <envApiKey>4_39_8zqat0dVEoTRU0SR8ww</envApiKey>
+    <envClientId>PXC6EVJSQO1QYM6WQZIF</envClientId>
+    <secret>N2c5WnRKbl9YZU9FSC1DVkxMSHNwSkNPNVJiUHBWRFE5Vm1Vbmg5T1BRR09CQU5M</secret>
+    <workspaceId>1973282e-0c9d-442d-8a92-00a98beedf4f</workspaceId>
+    <partnerId>4d6d5b90-8e06-41a6-9fb3-4249398124af</partnerId>
+    <email>hkfhskdhfkds@mailinator.com</email>
+    <envDomain>net</envDomain>
+    <envDatacenter>us1</envDatacenter>
+    <siteGroupId>629138887224</siteGroupId>
+
+
+    <serverDeployDelay>3500</serverDeployDelay>
+<!--    </api>-->
+</general>

@@ -1,0 +1,27 @@
+<general>
+
+    <tenantName>automation1</tenantName>
+
+    <userName>eliyahu.neploch@plainid.com</userName>
+
+<!--    <loginPageUrl>https://%s.us1.plainid.io/app/</loginPageUrl>-->
+
+<!--    <jwtURLTemplate>https://auth.us1.plainid.io/auth/realms/%s/protocol/openid-connect/token</jwtURLTemplate>-->
+<!--    <registrationUrl>https://api.us1.plainid.io/org-mgmt/request</registrationUrl>-->
+
+    <ownerId>8b52694b-f141-4356-a806-0af3db07820a</ownerId>
+    <schemaId>3064fc10-b8cf-4f89-8353-ae6141abf4e5</schemaId>
+
+    <envClientId>PJLJOO5DZHAXPJK7EOCG</envClientId>
+    <secret>vrRdrjgINu1LhjJ4ylLXOyQccCXg8CSCfvm8iMej</secret>
+    <workspaceId>8b52694b-f141-4356-a806-0af3db07820a</workspaceId>
+    <partnerId>9f5ab174-ca8f-4d73-b9a3-2502f53754e1</partnerId>
+    <email>fds45y54@sharklasers.com</email>
+    <envDomain>io</envDomain>
+    <envDatacenter>us1</envDatacenter>
+
+    <alternativeWorkspaceId>cfbd6d26-622d-4840-8aed-4a61786a28b3</alternativeWorkspaceId>
+    <alternativeEnvClientId>PFUATZ83SXPS6C2IA1YC</alternativeEnvClientId>
+    <alternativeSecret>YGKPEZri17cRPzsDjgeR5oLfkKxHG9A4ngGvhl1Y</alternativeSecret>
+
+</general>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" thread-count="1" parallel="methods">
+    <listeners>
+        <listener class-name="utilities.ExtentListener" />
+    </listeners>
+
+    <test verbose="2" preserve-order="true" name="FireFox Regression Tests">
+        <parameter name="browser" value="FireFox"/>
+        <groups>
+            <run>
+                <include name = "Regression">
+                </include>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.partnerManager.PartnerMainRunner">
+            </class>
+        </classes>
+    </test>
+
+</suite>
