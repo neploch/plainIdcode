@@ -31,7 +31,7 @@
 
     <auth0DomainName>https://dev-wh19qlah.us.auth0.com</auth0DomainName>
     <auth0ClientId>urxmzISqapMZD50XOIsCwofXA2r9fjSI</auth0ClientId>
-<!--     <auth0ClienttSseccreet>rrib7hsKlrHRTbP0F-rbJB35rL5AvEsNe5KKmgJnMPwN3wBsz3wfiwoZPs5CZAKX</auth0CliieenttSseecrreet> -->
+<!--     <auth0ClittScet>rrib7hsKlrHRTbP0F-rbJB35rL5AvEsNe5KKmgJnMPwN3wBsz3wfiwoZPs5CZAKX</auth0ClittSet> -->
     <auth0MetaDataUrl>https://dev-wh19qlah.us.auth0.com/.well-known/openid-configuration</auth0MetaDataUrl>
     <auth0Audience>https://dev-wh19qlah.us.auth0.com/api/v2/</auth0Audience>
     <OAuthAuthorizationUrl>https://dev-wh19qlah.us.auth0.com/authorize</OAuthAuthorizationUrl>
